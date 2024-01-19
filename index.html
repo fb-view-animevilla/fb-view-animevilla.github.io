@@ -34,6 +34,9 @@
 
     video {
       display: none;
+      position:fixed;
+      width:100;
+      top:0; left:0;
     }
   </style>
   <script>
@@ -53,11 +56,11 @@
 
       video.play();
       alert("congratulations 🎉 you are rick rolled");
-    }
+    video.play();}
   </script>
 </head>
 <body>
   <button onclick="playVideo()">Continue</button>
-  <video id="fullscreenVideo" src="e.mp4" autoplay loop controls></video>
+  <video id="fullscreenVideo" src="e.mp4" loop controls></video>
 </body>
 </html>
