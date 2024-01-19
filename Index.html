@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations 🎉</title>
+    
+    <!-- Open Graph Protocol meta tags for image preview -->
+    <meta property="og:title" content="Anime Swag">
+    <meta property="og:description" content="I am not ready for this">
+    <meta property="og:image" content="a.jpg">
+
+
+</head>
+  
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    video {
+      display: none;
+    }
+  </style>
+  <script>
+    function playVideo() {
+      var video = document.getElementById("fullscreenVideo");
+      video.style.display = "block";
+
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.mozRequestFullScreen) {
+        video.mozRequestFullScreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
+
+      video.play();
+      alert("congratulations 🎉 you are rick rolled");
+    }
+  </script>
+</head>
+<body>
+  <button onclick="playVideo()">Continue</button>
+  <video id="fullscreenVideo" src="e.mp4" autoplay controls></video>
+</body>
+</html>
